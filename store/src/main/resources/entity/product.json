@@ -1,0 +1,52 @@
+[
+  {
+    "code": "1",
+    "description": "Mouse",
+    "price": 19.99
+  },
+  {
+    "code": "25",
+    "description": "Tastiera",
+    "price": 49.99
+  },
+  {
+    "code": "526871",
+    "description": "Monitor",
+    "price": 179.99
+  },
+  {
+    "code": "526872",
+    "description": "Stampante",
+    "price": 89.99
+  },
+  {
+    "code": "873",
+    "description": "Webcam",
+    "price": 39.99
+  },
+  {
+    "code": "874",
+    "description": "Cuffie",
+    "price": 29.99
+  },
+  {
+    "code": "875",
+    "description": "Altoparlanti",
+    "price": 59.99
+  },
+  {
+    "code": "876",
+    "description": "Hard Disk Esterno",
+    "price": 79.99
+  },
+  {
+    "code": "877",
+    "description": "Chiavetta USB",
+    "price": 14.99
+  },
+  {
+    "code": "878",
+    "description": "Scheda Grafica",
+    "price": 299.99
+  }
+]
