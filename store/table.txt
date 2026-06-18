@@ -1,0 +1,18 @@
+ username |                               password                               | enabled 
+----------+----------------------------------------------------------------------+---------
+ fra      | {bcrypt}$2a$12$r0vKulpd0suVg3.1nEBoeeaPwZm48iV9o2vZXmHUH7rzLD2RpCO7W | t
+ sara     | {bcrypt}$2a$12$CYlXpSS91YJE.YlQH1lKuec/iI0Wf7pEJW/.gIjIT8iuQBpcWy17y | t
+ davide   | {bcrypt}$2a$12$wSSNB.NcG8qTFXbJR4Jd9.AfGYU1yUPF5CqyGH.yikH9mriw4vqOy | t
+(3 rows)
+
+store=# Select * from authorities
+;
+ username |   authority   
+----------+---------------
+ fra      | ROLE_EMPLOYEE
+ fra      | ROLE_MANAGER
+ fra      | ROLE_ADMIN
+ sara     | ROLE_MANAGER
+ sara     | ROLE_EMPLOYEE
+ davide   | ROLE_EMPLOYEE
+(6 rows)
