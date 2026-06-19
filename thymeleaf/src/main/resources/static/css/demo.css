@@ -1,0 +1,15 @@
+.my_body {
+    background: darkgrey;
+    color: black;
+    align-items: center;
+
+    .my_font {
+        font: bold 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 25px;
+    }
+
+    .my_font_large {
+        font: bold 25px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding-left: 25px;
+    }
+}
