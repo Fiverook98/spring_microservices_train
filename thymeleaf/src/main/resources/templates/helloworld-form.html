@@ -1,0 +1,14 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello world - Form</title>
+</head>
+<body>
+    <form th:action="@{/processFormV2}" method="POST">
+
+        <input type="text" name="firstName" placeholder="First Name"/>
+        <input type="submit" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Register Confirm</title>
+</head>
+
+<body >
+<h2>Register Confirm</h2>
+
+The sign up is done successfully: <span th:text="${member.lastName} + ' ' + ${member.firstName} + ' ' + ${member.country}"></span>
+<br><br>
+Your favourite language is <span th:text="${member.language}"></span>
+<br><br>
+</body>
+</html>

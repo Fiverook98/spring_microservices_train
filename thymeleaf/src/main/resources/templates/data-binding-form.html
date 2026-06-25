@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Data binding test</title>
+</head>
+<body>
+
+<h3>Registration Form</h3>
+<br>
+<form th:action="@{/processBinding}" th:object="${member}" method="POST">
+    <input type="text" th:field="*{firstName}" placeholder="First Name"/>
+    <br><br>
+    <input type="text" th:field="*{lastName}" placeholder="Last Name"/>
+    <br><br>
+    <select th:field="*{country}">
+        <option th:value="Italy" th:text="Italy"></option>
+        <option th:value="Germany" th:text="Germany"></option>
+        <option th:value="France" th:text="France"></option>
+        <option th:value="British" th:text="British"></option>
+    </select>
+    <br><br>
+    <input type="radio" th:field="*{language}" th:value="'Go'">Go</input>
+    <input type="radio" th:field="*{language}" th:value="'Java'">Java</input>
+    <input type="radio" th:field="*{language}" th:value="'C++'">C++</input>
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
