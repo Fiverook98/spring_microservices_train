@@ -12,4 +12,10 @@
         font: bold 25px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
         padding-left: 25px;
     }
+
+    .error {
+        color: red;
+        font-weight: bold;
+        background: #f7ffaa;
+    }
 }

@@ -1,17 +1,21 @@
 <!Doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Data binding test</title>
+    <link th:href="@{/css/demo.css}" rel="stylesheet">
 </head>
-<body>
+<body class="my_body">
 
 <h3>Registration Form</h3>
 <br>
 <form th:action="@{/processBinding}" th:object="${member}" method="POST">
+    <!-- Testing all form of binding and validation with this form -->
     <input type="text" th:field="*{firstName}" placeholder="First Name"/>
+    <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="error"></span>
     <br><br>
     <input type="text" th:field="*{lastName}" placeholder="Last Name"/>
+    <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="error"></span>
     <br><br>
     <select th:field="*{country}">
         <option th:value="Italy" th:text="Italy"></option>
@@ -23,6 +27,16 @@
     <input type="radio" th:field="*{language}" th:value="'Go'">Go</input>
     <input type="radio" th:field="*{language}" th:value="'Java'">Java</input>
     <input type="radio" th:field="*{language}" th:value="'C++'">C++</input>
+    <br><br>
+    <input type="checkbox" th:field="*{OS}" th:value="'Linux'">Linux</input>
+    <input type="checkbox" th:field="*{OS}" th:value="'MacOS'">MacOS</input>
+    <input type="checkbox" th:field="*{OS}" th:value="'Microsoft Windows'">Microsoft Windows</input>
+    <br><br>
+    <input type="text" th:field="*{seniority}" placeholder="seniority"/>
+    <span th:if="${#fields.hasErrors('seniority')}" th:errors="*{seniority}" class="error"></span>
+    <br><br>
+    <input type="text" th:field="*{postalCode}" placeholder="postalCode"/>
+    <span th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}" class="error"></span>
     <br><br>
     <input type="submit" value="Submit" />
 </form>
