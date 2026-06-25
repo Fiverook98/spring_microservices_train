@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.InitBinder;
 
 @ControllerAdvice
-public class memberValidator {
+public class memberBinding {
 
     /**
      * Return trimmed string using native method of spring.

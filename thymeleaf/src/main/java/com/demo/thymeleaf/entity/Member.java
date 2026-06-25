@@ -1,6 +1,7 @@
 package com.demo.thymeleaf.entity;
 
 
+import com.demo.thymeleaf.validation.PostalCode;
 import jakarta.validation.constraints.*;
 
 public class Member {
@@ -13,6 +14,7 @@ public class Member {
     @Size(min=3, message = "is required")
     private String lastName;
 
+    @PostalCode
     @Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 chars/digits")
     private String postalCode;
 
