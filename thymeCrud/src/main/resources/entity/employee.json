@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Leslie",
+    "lastName": "Andrews",
+    "email": "leslie.andrews@mail.com",
+    "age": 30,
+    "role": "ROLE_MANAGER"
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "Parker",
+    "email": "robert.parker@mail.com",
+    "age": 25,
+    "role": "ROLE_USER"
+  },
+  {
+    "firstName": "Timothy",
+    "lastName": "Smith",
+    "email": "timothy.smith@mail.com",
+    "age": 18,
+    "role": "ROLE_USER"
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Wilson",
+    "email": "emma.wilson@mail.com",
+    "age": 22,
+    "role": "ROLE_USER"
+  },
+  {
+    "firstName": "Rachel",
+    "lastName": "Martin",
+    "email": "rachel.martin@mail.com",
+    "age": 28,
+    "role": "ROLE_MANAGER"
+  },
+  {
+    "firstName": "Barney",
+    "lastName": "Stinson",
+    "email": "barney.stinson@mail.com",
+    "age": 19,
+    "role": "ROLE_ADMIN"
+  }
+]
